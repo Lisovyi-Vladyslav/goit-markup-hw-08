@@ -1,0 +1,65 @@
+// хедер
+.header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    background: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+}
+
+
+// список-інформація
+
+// основні стилі
+.list-info {
+    padding: 0px;
+    display: flex;
+    margin-left: auto;
+}
+
+// іконка
+.list-info__icon {
+    fill: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--envelope {
+            margin-right: 10px;
+    
+            width: 16px;
+            height: 12px;
+        }
+    
+        &--smartphone {
+            margin-right: 10px;
+    
+            width: 10px;
+            height: 16px;
+        }
+
+        .list-info__link:hover &,
+        .list-info__link:focus & {
+            fill: var(--accent-cl);
+        }
+}
+
+// силка 
+.list-info__link {
+    color: var(--secondary-txt-col);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+// елемент
+.list-info__item:last-child {
+    margin-left: 50px;
+}
+
+

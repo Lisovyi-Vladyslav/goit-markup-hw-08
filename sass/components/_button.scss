@@ -1,0 +1,44 @@
+.btn-secondary {
+    color: var(--main-txt-col);
+    background-color: var(--secondary-bg-col);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            color: #FFFFFF;
+            background: var(--accent-cl);
+        }
+}
+
+.btn-main {
+    background-color: var(--hero-bg-btn-col);
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border: 0px;
+
+    min-width: 200px;
+    min-height: 50px;
+    left: 700px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin: auto;
+    display: block;
+    padding: 0px 15px;
+
+    cursor: pointer;
+}
+

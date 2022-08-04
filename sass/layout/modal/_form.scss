@@ -1,0 +1,157 @@
+
+// форма
+.modal-form__label {
+
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+}
+
+// ведення
+.modal-form__input {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 12px 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    height: 40px;
+    width: 100%;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+        &:focus {
+            border: 1px solid var(--accent-cl);
+        }
+}
+// контейнер
+.modal-form__conteiner {
+
+    position: relative;
+}
+// іконка
+.modal-form__icon {
+    fill: #212121;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+
+
+    height: 18px;
+    width: 18px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.modal-form__conteiner:hover &,
+.modal-form__conteiner:focus & {
+        fill: var(--accent-cl);
+    }
+
+}
+
+// коментар
+.modal-form__coment {
+    font-weight: 400;
+       font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: #757575;
+
+        margin-top: 4px;
+}
+
+.form__coment {
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    
+
+    resize: none;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: 0.01em;
+    
+            color: rgba(117, 117, 117, 0.5);
+        }
+
+    &:hover,
+    &:focus {
+     border: 1px solid var(--accent-cl);
+    }
+}
+
+
+
+// кнопка
+.submit-btn {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+/* чекбокс */
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    margin-bottom: 30px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+// чекбокс-силка
+.form-checkbox__link {
+    margin-left: 5px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+
+    color: var(--accent-cl);
+}
+
+.visually-hidden {
+    appearance: none;
+    position: absolute;
+}
+// чекбокс-іконка
+.form-checkbox__icon {
+    margin-right: 8px;
+
+    height: 15px;
+    width: 16px;
+
+    border: 2px solid #212121;
+    border-radius: 2px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.form-checkbox__input:checked+& {
+        background-image: url(../imeges/icon/icon\ check.svg);
+        background-size: contain;
+        border: var(--accent-cl);
+        background-color: var(--accent-cl);
+        transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+}
+
+

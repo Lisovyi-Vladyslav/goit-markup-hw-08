@@ -1,0 +1,20 @@
+ body {
+     font-family: var(--main-font);
+
+     color: var(--secondary-txt-col);
+ }
+
+ ul {
+     margin: 0px;
+     padding: 0px;
+ }
+
+ .section {
+     padding-top: 94px;
+     padding-bottom: 94px;
+ }
+ .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 15px;
+ }

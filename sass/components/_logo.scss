@@ -1,0 +1,22 @@
+
+
+.link__logo {
+    margin-right: 90px;
+
+    color: #000000;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    &--blue {
+            color: var(--accent-cl);
+        }
+
+&--while {
+    color: #FFFFFF;
+    margin: 0px;
+}
+    }
+
