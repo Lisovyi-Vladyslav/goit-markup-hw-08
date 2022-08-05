@@ -4,13 +4,61 @@
     padding-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+   
     background: #FFFFFF;
-
-    display: flex;
-    align-items: center;
 }
 
+.header__container {
+display: flex;
+align-items: center;
+
+@media screen and (max-width: 480px){
+    justify-content: space-between;
+}
+}
+
+.menu-header {
+@media screen and (max-width: 480px) {
+
+    position: relative;
+        justify-content: space-between;
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 796px;
+    background-color: #FFFFFF;
+    }
+    
+    @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    width: 950px;
+                }
+
+}
+
+.is-close {
+opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.menu-button-open {
+    background: #FFFFFF;
+    bottom: 0px;
+    padding: 0px;
+    border-width: 0px;
+    margin-left: auto;
+
+    @media screen and (min-width: 481px) {
+display: none;
+    }
+}
+
+.menu-button__icon {
+    width: 40px;
+    height: 40px;
+}
 
 // список-інформація
 

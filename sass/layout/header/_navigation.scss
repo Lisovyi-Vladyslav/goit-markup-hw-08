@@ -18,6 +18,13 @@
         margin-right: 0px;
     }
 }
+
+.nav__link {
+    font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        text-align: center;
+}
 // активна старінка
 .current {
     color: var(--accent-cl);
@@ -35,4 +42,5 @@
             top: 46px;
         }
 }
+
 

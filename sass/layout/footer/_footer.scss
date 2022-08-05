@@ -9,8 +9,12 @@
     
             padding-top: 60px;
             padding-bottom: 60px;
+
+            @media screen and (max-width: 480px) {
+                    flex-direction: column;
+                }
         }
-}
+    }
 
 .title-footer {
     font-weight: 700;
@@ -23,8 +27,25 @@
 
 // адреси стилі
 
+.address {
+    @media screen and (max-width: 480px) {
+            margin-bottom: 60px;
+        }
+    
+}
+
 .container-address {
     margin-right: 70px;
+    
+
+    @media screen and (max-width: 480px) {
+            margin-right: 0px;
+            display: flex;
+                align-items: center;
+                flex-direction: column;
+        }
+
+                
 }
 
 
@@ -40,6 +61,18 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+
+    @media screen and (max-width: 480px) {
+            text-align: center;
+        }
+    
+    
+}
+
+.address__item {
+    @media screen and (max-width: 480px) {
+            text-align: center;
+        }
 }
 
 .address__item:first-child {
@@ -59,6 +92,10 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+@media screen and (max-width: 480px) {
+        text-align: center;
+    }
+
     &:hover,
     &:focus {
             color: var(--accent-cl);
@@ -66,21 +103,32 @@
 }
 
 // соціальні мережі стилі
+.container-social-networks {
+    @media screen and (max-width: 480px) {
+            margin-bottom: 60px;
+        }
+}
 
 .container-social-networks__title {
     margin: 0px;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 480px) {
+            text-align: center;
+        }
 }
 
 
 // підписка стилі
 
 .subscribe {
-    width: 570px;
-
     border: 0;
-    padding: 0;
-    margin-left: 93px;
+        padding: 0;
+
+    @media screen and (min-width: 1200px) {
+            width: 570px;
+                margin-left: 93px;
+        }
 }
 
 // загальні стилі
@@ -89,6 +137,10 @@
 .subscribe__title {
     margin: 0;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 480px) {
+            text-align: center;
+        }
 }
 
 // іконка
@@ -107,13 +159,26 @@
 
     margin-left: 12px;
     margin-right: 0;
+
+    @media screen and (max-width: 480px) {
+        width: 200px;
+        margin-top: 20px;
+        }
 }
 
 // форма
 .subscribe-form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
+    @media screen and (min-width: 1200px) {
+            align-items: center;
+                justify-content: center;;
+        }
+
+    @media screen and (max-width: 480px) {
+            flex-direction: column;
+        }
 
     &__input {
             padding: 15px 16px;
@@ -125,6 +190,7 @@
     
             height: 50px;
             width: 358px;
+
     
             font-weight: 400;
             font-size: 16px;
@@ -135,7 +201,12 @@
             letter-spacing: 0.03em;
     
             color: rgba(255, 255, 255, 0.6);
+        
+        @media screen and (max-width: 480px) {
+                width: 450px;
+            }
         }
+
 }
 
 
