@@ -13,7 +13,16 @@
             @media screen and (max-width: 480px) {
                     flex-direction: column;
                 }
+
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+                                    display: inline-flex;
+                                    flex-wrap: wrap;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
         }
+                
+                
     }
 
 .title-footer {
@@ -28,7 +37,7 @@
 // адреси стилі
 
 .address {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             margin-bottom: 60px;
         }
     
@@ -38,13 +47,16 @@
     margin-right: 70px;
     
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             margin-right: 0px;
             display: flex;
                 align-items: center;
                 flex-direction: column;
         }
 
+                 @media screen and (min-width: 481px) and (max-width: 768px) {
+                    margin-right: 165px;
+                 }
                 
 }
 
@@ -62,7 +74,7 @@
     letter-spacing: 0.03em;
     color: #FFFFFF;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             text-align: center;
         }
     
@@ -70,7 +82,7 @@
 }
 
 .address__item {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             text-align: center;
         }
 }
@@ -92,7 +104,7 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
         text-align: center;
     }
 
@@ -104,16 +116,19 @@
 
 // соціальні мережі стилі
 .container-social-networks {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             margin-bottom: 60px;
         }
+                 @media screen and (min-width: 481px) and (max-width: 768px) {
+                    margin-bottom: 120px;
+                 }
 }
 
 .container-social-networks__title {
     margin: 0px;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             text-align: center;
         }
 }
@@ -129,7 +144,11 @@
             width: 570px;
                 margin-left: 93px;
         }
-}
+
+        // @media screen and (max-width: 768px) {
+        //     display: block;
+        // }
+    }
 
 // загальні стилі
 
@@ -138,7 +157,7 @@
     margin: 0;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             text-align: center;
         }
 }
@@ -160,7 +179,7 @@
     margin-left: 12px;
     margin-right: 0;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
         width: 200px;
         margin-top: 20px;
         }
@@ -176,7 +195,7 @@
                 justify-content: center;;
         }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
             flex-direction: column;
         }
 
@@ -202,7 +221,7 @@
     
             color: rgba(255, 255, 255, 0.6);
         
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
                 width: 450px;
             }
         }

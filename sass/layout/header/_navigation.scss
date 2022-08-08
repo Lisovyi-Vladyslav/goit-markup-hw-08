@@ -4,10 +4,16 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    @media screen and (max-width: 480px) {
+            margin-bottom: 262px;
+        }
 }
 // список
 .nav__list {
     display: flex;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 
 // елемент
@@ -17,6 +23,12 @@
     &:last-child {
         margin-right: 0px;
     }
+        @media screen and (max-width: 480px) {
+            flex-direction: column;
+            margin-right: 0;
+            margin-bottom: 32px;
+
+        }
 }
 
 .nav__link {
@@ -24,23 +36,31 @@
         font-size: 40px;
         line-height: 1.17;
         text-align: center;
+        @media screen and (min-width: 481px) {
+            font-size: 14px;
+                line-height: 1.14;
+        }
+        
 }
 // активна старінка
 .current {
-    color: var(--accent-cl);
+    @media screen and (min-width: 481px) {
+color: var(--accent-cl);
     position: relative;
 
     &::after {
-            content: '';
-            display: inline-block;
-            position: absolute;
-            background: #2196F3;
-            border-radius: 2px;
-            height: 4px;
-            width: 100%;
-            left: 0;
-            top: 46px;
-        }
+        content: '';
+        display: inline-block;
+        position: absolute;
+        background: #2196F3;
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        left: 0;
+        top: 46px;
+    }
+    }
+    
 }
 
 

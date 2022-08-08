@@ -6,6 +6,13 @@
 
     background-color: var(--dark-bg-col);
     background-image: url('../imeges/hero-title.jpg');
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            & {
+                background-image: url('/imeges/hero-img2x.jpg');
+            }
+        }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;

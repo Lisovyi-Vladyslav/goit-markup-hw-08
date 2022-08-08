@@ -17,44 +17,71 @@
   </head>
   <body class="portfolio">
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <a class="link link__logo" href=""
           ><span class="link__logo--blue">Web</span>Studio</a
         >
-        <nav class="nav">
-          <ul class="nav__list list">
-            <li class="nav__item">
-              <a class="link" href="./index.html">Студия</a>
+        <button class="menu-button-open" header-menu-open>
+          <svg class="menu-button__icon">
+            <use href="./imeges/icon/icon.svg#icon-menu_nav"></use>
+          </svg>
+        </button>
+        <div class="menu-header is-close" header-menu>
+          <button class="modal__btn-close" header-menu-close>
+            <svg class="modal__icon">
+              <use href="./imeges/icon/icon.svg#icon-vector"></use>
+            </svg>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list list">
+              <li class="nav__item">
+                <a class="nav__link link current" href="./index.html">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="list-info">
+            <li class="item list-info__item">
+              <a class="link list-info__link" href="">
+                <svg class="list-info__icon list-info__icon--envelope">
+                  <use href="./imeges/icon/icon.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="nav__item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+            <li class="item list-info__item">
+              <a class="link list-info__link" href="">
+                <svg class="list-info__icon list-info__icon--smartphone">
+                  <use href="./imeges/icon/icon.svg#icon-smartphone"></use>
+                </svg>
+                +38 099 111 11 11</a
+              >
             </li>
-            <li class="nav__item"><a class="link" href="">Контакты</a></li>
           </ul>
-        </nav>
-        <ul class="list-info">
-          <li class="item list-info__item">
-            <a class="link list-info__link" href="">
-              <svg class="list-info__icon list-info__icon--envelope">
-                <use href="./imeges/icon/icon.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="item list-info__item">
-            <a class="link list-info__link" href="">
-              <svg class="list-info__icon list-info__icon--smartphone">
-                <use href="./imeges/icon/icon.svg#icon-smartphone"></use>
-              </svg>
-              +38 099 111 11 11</a
-            >
-          </li>
-        </ul>
+          <ul class="menu-networks-list">
+            <ul class="menu-networks-list__item">
+              Instagram
+            </ul>
+            <ul class="menu-networks-list__item">
+              Twitter
+            </ul>
+            <ul class="menu-networks-list__item">
+              Facebook
+            </ul>
+            <ul class="menu-networks-list__item">
+              LinkedIn
+            </ul>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <h1 hidden>Каталог наших проектів</h1>
-
       <section class="section-catalog">
         <div class="container">
           <h2 hidden>Фільтри</h2>
@@ -93,11 +120,15 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="
+                      ./imeges/img-technocrack.jpg    1x,
+                      ./imeges/img-technocrack-2x.jpg 2x
+                    "
                     class="img-catalog"
                     src="./imeges/img-technocrack.jpg"
                     alt="Фото Веб-сайт
               Технокряк"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -105,7 +136,7 @@
                     исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-                <div class="conteiner-projects">
+                <div class="conteiner-projects conteiner-projects--tablet">
                   <h3 class="conteiner-projects__title">Технокряк</h3>
                   <p class="conteiner-projects__txt">Веб-сайт</p>
                 </div>
@@ -115,9 +146,14 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="
+                      ./imeges/img-poster-new-orleans-vs-golden-star.jpg    1x,
+                      ./imeges/img-poster-new-orleans-vs-golden-star-2x.jpg 2x
+                    "
+                    class="img-catalog"
                     src="./imeges/img-poster-new-orleans-vs-golden-star.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -137,10 +173,15 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
-                    src="./imeges/img-seafood-restaurant.jpg"
+                    srcset="
+                      ./imeges/img-seafood-restaurant.jpg    1x,
+                      ./imeges/img-seafood-restaurant-2x.jpg 2x
+                    "
+                    class="img-catalog"
+                    src="./imeges/img-seafood-restaurant.jpgs"
                     alt="Ресторан
               Seafood"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -158,9 +199,11 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="./imeges/img-prime project.jpg 1x, ./imeges/img-prime project-2x.jpg 2x"
+                    class="img-catalog"
                     src="./imeges/img-prime project.jpg"
                     alt="Проект Prime"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -178,9 +221,11 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="./imeges/img-boxes project.jpg 1x, ./imeges/img-boxes project-2x.jpg 2x"
+                    class="img-catalog"
                     src="./imeges/img-boxes project.jpg"
                     alt="Проект Boxes"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -198,9 +243,14 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="
+                      ./imeges/img-inspiration-has-no-borders.jpg    1x,
+                      ./imeges/img-inspiration-has-no-borders-2x.jpg 2x
+                    "
+                    class="img-catalog"
                     src="./imeges/img-inspiration-has-no-borders.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -220,10 +270,15 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="
+                      ./imeges/img-limited-edition.jpg    1x,
+                      ./imeges/img-limited-edition-2x.jpg 2x
+                    "
+                    class="img-catalog"
                     src="./imeges/img-limited-edition.jpg"
                     alt="Издание Limited
               Edition"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -243,9 +298,14 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="
+                      ./imeges/img-lab-project.jpg    1x,
+                      ./imeges/img-lab-project-2x.jpg 2x
+                    "
+                    class="img-catalog"
                     src="./imeges/img-lab-project.jpg"
                     alt="Проект LAB"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -263,10 +323,15 @@
               <a class="catalog-list__link link" href="">
                 <div class="catalog-list__img">
                   <img
+                    srcset="
+                      ./imeges/img-growing-business.jpg    1x,
+                      ./imeges/img-growing-business-2x.jpg 2x
+                    "
+                    class="img-catalog"
                     src="./imeges/img-growing-business.jpg"
                     alt="Growing
               Business"
-                    width="370"
+                    width="450"
                   />
                   <p class="animation-txt">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -376,5 +441,6 @@
         </fieldset>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
