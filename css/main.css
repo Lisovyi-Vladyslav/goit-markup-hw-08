@@ -1166,6 +1166,7 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 1600px;
   background-color: var(--dark-bg-col);
   background-image: url("../imeges/hero-title.jpg");
   background-size: cover;
