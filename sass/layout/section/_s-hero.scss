@@ -1,4 +1,6 @@
 .section-hero {
+   margin-left: auto;
+   margin-right: auto;
     padding-top: 118px;
     padding-bottom: 118px;
     display: flex;
@@ -17,6 +19,9 @@ max-width: 1600px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
+    @media screen and (min-width: 1200px){
+        height: 600px;
+    }
 }
 
 .title-hero {
