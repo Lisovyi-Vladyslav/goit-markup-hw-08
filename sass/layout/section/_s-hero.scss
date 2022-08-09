@@ -12,7 +12,7 @@ max-width: 1600px;
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             & {
-                background-image: url('/imeges/hero-img2x.jpg');
+                background-image: url('../imeges/hero-img2x.jpg');
             }
         }
     background-size: cover;
