@@ -49,10 +49,13 @@ justify-content: space-between;
     top: 0;
     left: 0;
     width: 100%;
+    
     background-color: #FFFFFF;
     padding: 48px 40px;
         z-index: 1;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     }
 
     @media screen and (min-width: 768px) {
@@ -123,7 +126,6 @@ display: none;
 .list-info {
     padding: 0px;
     display: flex;
-    margin-left: auto;
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-direction: column;
