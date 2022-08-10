@@ -4,9 +4,13 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    @media screen and (max-width: 767px) {
-            margin-bottom: 262px;
+    @media screen and (max-width: 480px) {
+            display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                min-height: 796px;
         }
+
 }
 // список
 .nav__list {
