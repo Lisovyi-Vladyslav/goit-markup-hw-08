@@ -4,14 +4,14 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
             margin-bottom: 262px;
         }
 }
 // список
 .nav__list {
     display: flex;
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         flex-direction: column;
     }
 }
@@ -23,7 +23,7 @@
     &:last-child {
         margin-right: 0px;
     }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 767px) {
             flex-direction: column;
             margin-right: 0;
             margin-bottom: 32px;
@@ -36,7 +36,7 @@
         font-size: 40px;
         line-height: 1.17;
         text-align: center;
-        @media screen and (min-width: 481px) {
+        @media screen and (min-width: 768px) {
             font-size: 14px;
                 line-height: 1.14;
         }
@@ -44,7 +44,7 @@
 }
 // активна старінка
 .current {
-    @media screen and (min-width: 481px) {
+    @media screen and (min-width: 768px) {
 color: var(--accent-cl);
     position: relative;
 
@@ -58,6 +58,9 @@ color: var(--accent-cl);
         width: 100%;
         left: 0;
         top: 46px;
+        @media screen and (min-width: 769px) and (max-width: 1199px) {
+            top: 50px;
+        }
     }
     }
     
