@@ -39,8 +39,8 @@
 
 // модальне вікно
 .modal {
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
+    height: auto;
     background-color: #ffffff;
     padding: 40px;
 
@@ -55,8 +55,9 @@
                 min-height: 581px;
 
         }
-
-
+@media screen and (max-width: 479px) {
+    width: 100%;
+}
 }
 // кнопка
 .modal__btn-close {

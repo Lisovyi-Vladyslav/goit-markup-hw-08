@@ -189,6 +189,7 @@
     @media screen and (max-width: 1199px) {
         width: 200px;
         margin-top: 20px;
+        margin-left: 0;
         }
 }
 
@@ -215,7 +216,7 @@
             background: var(--dark-bg-col);
     
             height: 50px;
-            width: 358px;
+            width: 100%;
 
     
             font-weight: 400;
@@ -228,7 +229,7 @@
     
             color: rgba(255, 255, 255, 0.6);
         
-        @media screen and (max-width: 1199px) {
+        @media screen and (min-width: 480px) and (max-width: 1199px) {
                 width: 450px;
             }
         }

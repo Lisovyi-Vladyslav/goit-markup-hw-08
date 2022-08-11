@@ -60,8 +60,9 @@ margin-bottom: 0;
 }
 
 .our-team-list__img {
-
-@media screen and (max-width: 767px) {
+height: auto;
+width: 100%;
+@media screen and (min-width: 481px) and (max-width: 767px){
         width: 450px;
             height: 460px;
     }

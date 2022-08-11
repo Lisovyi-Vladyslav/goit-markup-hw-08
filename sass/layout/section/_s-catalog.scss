@@ -121,6 +121,10 @@ justify-content: center;
                  
 }
 .img-catalog {
+    @media screen and (max-width: 479px) {
+        height: auto;
+        width: 100%;
+    }
     @media screen and (min-width: 768px) {
             width: 354px;
         }
